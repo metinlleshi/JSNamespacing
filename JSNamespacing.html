@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script src="lib1.js"></script>
+        <script src="lib2.js"></script>
+    </head>
+    <body>
+        <script>
+            var Lleshinamespace = Lleshinamespace || {};
+            Lleshinamespace.CalculationsMain = Lleshinamespace.CalculationsMain || {
+                Greet : function(name){
+                    var name = name || "Mister X";
+                    return "Hey "+name+ " ,greeting from main script";
+                }
+            }
+
+            console.log(Lleshinamespace.CalculationsMain.Greet("Metin"));
+            console.log(Lleshinamespace.CalculationsA.Greet("Metin"));
+            console.log(Lleshinamespace.CalculationsB.Greet("Metin"));
+
+        </script>
+    </body>
+</html>
